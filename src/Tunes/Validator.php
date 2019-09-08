@@ -7,8 +7,8 @@ use ReceiptValidator\RunTimeException;
 
 class Validator
 {
-    const ENDPOINT_SANDBOX = 'https://sandbox.Tunes.apple.com/verifyReceipt';
-    const ENDPOINT_PRODUCTION = 'https://buy.Tunes.apple.com/verifyReceipt';
+    const ENDPOINT_SANDBOX = 'https://sandbox.iTunes.apple.com/verifyReceipt';
+    const ENDPOINT_PRODUCTION = 'https://buy.iTunes.apple.com/verifyReceipt';
 
     /**
      * endpoint url
