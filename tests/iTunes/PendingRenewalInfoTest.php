@@ -1,12 +1,12 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use ReceiptValidator\iTunes\PendingRenewalInfo;
+use ReceiptValidator\Tunes\PendingRenewalInfo;
 
 /**
  * @group library
  */
-class iTunesPendingRenewalInfoTest extends TestCase
+class TunesPendingRenewalInfoTest extends TestCase
 {
 
     public function testInvalidOptionsToConstructor(): void

@@ -1,6 +1,6 @@
 <?php
 
-namespace ReceiptValidator\iTunes;
+namespace ReceiptValidator\Tunes;
 
 use Carbon\Carbon;
 use ReceiptValidator\RunTimeException;

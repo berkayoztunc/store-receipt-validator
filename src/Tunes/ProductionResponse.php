@@ -1,6 +1,6 @@
 <?php
 
-namespace ReceiptValidator\iTunes;
+namespace ReceiptValidator\Tunes;
 
 class ProductionResponse extends AbstractResponse implements ResponseInterface
 {

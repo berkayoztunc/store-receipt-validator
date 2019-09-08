@@ -1,14 +1,14 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use ReceiptValidator\iTunes\ProductionResponse;
-use ReceiptValidator\iTunes\ResponseInterface;
-use ReceiptValidator\iTunes\SandboxResponse;
+use ReceiptValidator\Tunes\ProductionResponse;
+use ReceiptValidator\Tunes\ResponseInterface;
+use ReceiptValidator\Tunes\SandboxResponse;
 
 /**
  * @group library
  */
-class iTunesResponseTest extends TestCase
+class TunesResponseTest extends TestCase
 {
 
     public function testInvalidOptionsToConstructor(): void
@@ -100,7 +100,7 @@ class iTunesResponseTest extends TestCase
         );
 
         $this->assertContainsOnlyInstancesOf(
-            ReceiptValidator\iTunes\PurchaseItem::class,
+            ReceiptValidator\Tunes\PurchaseItem::class,
             $response->getLatestReceiptInfo()
         );
 
@@ -137,7 +137,7 @@ class iTunesResponseTest extends TestCase
         );
 
         $this->assertContainsOnlyInstancesOf(
-            ReceiptValidator\iTunes\PendingRenewalInfo::class,
+            ReceiptValidator\Tunes\PendingRenewalInfo::class,
             $response->getPendingRenewalInfo()
         );
 

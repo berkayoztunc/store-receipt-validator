@@ -1,7 +1,7 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use ReceiptValidator\iTunes\PurchaseItem;
+use ReceiptValidator\Tunes\PurchaseItem;
 
 /**
  * @group library

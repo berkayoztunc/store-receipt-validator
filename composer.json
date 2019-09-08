@@ -1,6 +1,6 @@
 {
   "name": "aporat/store-receipt-validator",
-  "description": "PHP receipt validator for Apple iTunes, Google Play and Amazon App Store",
+  "description": "PHP receipt validator for Apple Tunes, Google Play and Amazon App Store",
   "type": "library",
   "authors": [
     {
@@ -15,7 +15,7 @@
     }
   ],
   "keywords": [
-    "itunes",
+    "Tunes",
     "apple",
     "in app",
     "purchase",

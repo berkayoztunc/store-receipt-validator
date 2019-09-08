@@ -1,14 +1,14 @@
 <?php
 
-namespace ReceiptValidator\iTunes;
+namespace ReceiptValidator\Tunes;
 
 use GuzzleHttp\Client as HttpClient;
 use ReceiptValidator\RunTimeException;
 
 class Validator
 {
-    const ENDPOINT_SANDBOX = 'https://sandbox.itunes.apple.com/verifyReceipt';
-    const ENDPOINT_PRODUCTION = 'https://buy.itunes.apple.com/verifyReceipt';
+    const ENDPOINT_SANDBOX = 'https://sandbox.Tunes.apple.com/verifyReceipt';
+    const ENDPOINT_PRODUCTION = 'https://buy.Tunes.apple.com/verifyReceipt';
 
     /**
      * endpoint url
@@ -25,7 +25,7 @@ class Validator
     protected $exclude_old_transactions = false;
 
     /**
-     * itunes receipt data, in base64 format
+     * Tunes receipt data, in base64 format
      *
      * @var string|null
      */
@@ -234,7 +234,7 @@ class Validator
         $httpResponse = $client->request('POST', null, ['body' => $this->prepareRequestData()]);
 
         if ($httpResponse->getStatusCode() !== 200) {
-            throw new RunTimeException('Unable to get response from itunes server');
+            throw new RunTimeException('Unable to get response from Tunes server');
         }
 
         $decodedBody = json_decode($httpResponse->getBody(), true);
